@@ -1,0 +1,33 @@
+@import '../../app.scss';
+.about{
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap:20px;
+    h1{
+        font-size: 100px;
+        text-align: center;
+        font-weight: 700;
+        @include mobile{
+            font-size: 80px;
+        }
+    }
+    p{
+        font-size: 25px;
+        text-align: center;
+        font-weight: 100;
+        max-width: 60%;
+        align-self: center;
+        @include mobile{
+            font-size: 16px;
+            max-width: 80%;
+            align-self: center;
+        }
+        @include tablet{
+            font-size: 16px;
+            max-width: 80%;
+            align-self: center;
+        }
+    }
+}
